@@ -361,7 +361,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 128px;
+  padding: 0 8.4%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -445,6 +445,64 @@ a {
 
 .benefits__block:nth-child(2) .benefits__block-image {
   left: -41px;
+}
+
+.benefits__wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.benefits__wrap-help {
+  border-radius: 200px;
+  background-color: white;
+  color: #333333;
+  font-family: "Noto Sans", "Arial", sans-serif;
+  position: absolute;
+  z-index: 3;
+  width: 21.5%;
+  padding: 24px 32px 24px 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.benefits__help-social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.benefits__help-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #3d3d3d;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.benefits__help-text {
+  width: 67%;
+  font-size: 14px;
 }
 
 .button {
@@ -813,6 +871,16 @@ a {
   content: "";
 }
 
+@media (max-width: 1500px) {
+  .services__main-col--right .services__main-number::before {
+    display: none !important;
+  }
+
+  .services__main-col--left .services__main-number::after {
+    display: none;
+  }
+}
+
 @media (max-width: 1440px) {
   .benefits__block {
     width: 100%;
@@ -841,6 +909,14 @@ a {
 
   .header__inner-right {
     display: none;
+  }
+
+  .benefits__wrap-help {
+    width: 50%;
+  }
+
+  .benefits__blocks {
+    padding: 0;
   }
 
   .benefits__list {
@@ -912,6 +988,11 @@ a {
     font-size: 18px;
   }
 
+  .benefits__wrap-help {
+    width: 90%;
+    padding: 20px;
+  }
+
   .benefits__list {
     top: -70px;
     padding: 20px 10px;
@@ -922,6 +1003,7 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding: 0;
     gap: 100px;
   }
 
